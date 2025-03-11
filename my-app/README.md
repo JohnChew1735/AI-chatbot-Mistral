@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Chatbot with Speech Recognition & AI Response
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple AI chatbot that uses speech-to-text recognition to take user input and text-to-speech to read out the bot's response. The chatbot is powered by the Mistral model from Ollama and supports both text input and voice commands for a seamless experience.
+🛠 Features
 
-## Available Scripts
+✅ Speech Recognition (Voice Input) – Converts speech to text using webkitSpeechRecognition
+✅ Text-to-Speech – Reads out the AI response using SpeechSynthesisUtterance
+✅ Conversational AI – Uses the Mistral model to generate intelligent responses
+✅ Real-Time AI Typing Effect – Displays bot responses as if they’re being typed
+✅ Chat History – Stores and retrieves chat history using localStorage
+✅ Direct API Call to Ollama – No backend required, directly calls localhost:11434/api/generate
+🚀 Getting Started
+1️⃣ Install & Run Ollama
 
-In the project directory, you can run:
+Make sure you have Ollama installed on your system. If not, install it from:
+🔗 Ollama Official Website
 
-### `npm start`
+Run the following command to download and start the Mistral model:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ollama run mistral
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2️⃣ Install Dependencies
 
-### `npm test`
+Inside your project folder, install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
 
-### `npm run build`
+3️⃣ Start the React App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📝 Usage
+🗣️ Using Speech Recognition
 
-### `npm run eject`
+    Click the "Press to Speak 🔴" button.
+    Say your question out loud.
+    The chatbot will convert your speech to text and display it in the input box.
+    Once you stop speaking, the bot will automatically ask the AI and provide a response.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+⌨️ Using Text Input
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Type your question in the input box.
+    Click "Ask the Bot" to get a response.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🗣️ Text-to-Speech (Bot Reads the Answer)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Once the AI responds, the chatbot will automatically read out the answer using SpeechSynthesisUtterance.
 
-## Learn More
+🛠 Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    React.js – Frontend framework
+    Ollama – Runs AI models locally
+    Mistral Model – AI chatbot model
+    Speech Recognition API – Converts speech to text
+    Speech Synthesis API – Converts text to speech
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+💡 Future Improvements
 
-### Code Splitting
+🔹 Add support for multiple languages
+🔹 Improve the UI with a chat bubble interface
+🔹 Implement streaming responses for real-time AI interaction
+📜 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source and free to use.
